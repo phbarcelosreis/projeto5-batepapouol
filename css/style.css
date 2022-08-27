@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    width: 375px;
+    
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.parteTopo{
+    box-sizing: border-box;
+    width: 375px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px 0 22px;
+}
+
+.conteudoPagina{
+    background-color: red;
+    width: 375px;
+    height:587px; 
+    display: flex;
+}
+
+.logoUOL{
+    width: 75px;
+    height: 53px;
+}
+
+.escreverMensagem{
+    box-sizing: border-box;
+    width: 375px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px 0 18px;
+    
+}
+
+.textoMensagem{
+    border: none;
+    width: 300px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+input::placeholder{
+    font-style: italic;
+
+}
+
+input:focus{
+    outline: none;
+
+}
+
+.escreverMensagem > img{
+    height: 26px;
+    width: 26px;
+}
