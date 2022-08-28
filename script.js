@@ -1,23 +1,29 @@
-const promess = axios.get('https://mock-api.driven.com.br/api/v6/uol/participants ');
-promess.then(processarResposta);
-
-function processarResposta (resposta){ 
-    console.log(resposta.data);
-}
-
 let usersON = [];
+let pessoa = [];
 
-const entrarSala = () => {
+const promess = axios.get('https://mock-api.driven.com.br/api/v6/uol/participants');
+promess.then(entrarSala);
+
+function entrarSala(resposta){
     usersON = resposta.data;
     const nome  = prompt("Digite seu nome:");
-    if(usersON.some(e => e.name === nome)){
-        alert("Nome já selecionado, digite outro!")
-        entrarSala()
-    }else{
-        let pessoa = {name: nome, message: ""};
-        usersON.push(pessoa);
-    }
+    const user = {name: nome};
+    const requisition = axios.post('https://mock-api.driven.com.br/api/v6/uol/participants', user);
+    requisition.then(sucesso);
+    requisition.catch(falha);
 }
+
+function sucesso(){
+    console.log("Deu Certo!!");
+}
+
+function falha(){
+    console.log("Esse nome já existe!");
+    alert('Esse nome já existe');
+    entrarSala();
+}
+
+
 
 
 

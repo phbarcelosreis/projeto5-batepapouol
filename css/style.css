@@ -2,9 +2,8 @@
 
 body{
     width: 375px;
-    
     margin: 0 auto;
-    background-color: aqua;
+    background: #F3F3F3;
 }
 
 .parteTopo{
@@ -20,10 +19,17 @@ body{
 }
 
 .conteudoPagina{
-    background-color: red;
+    background-color: #F3F3F3;
     width: 375px;
     height:587px; 
     display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 2px;
 }
 
 .logoUOL{
@@ -41,7 +47,6 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 17px 0 18px;
-    
 }
 
 .textoMensagem{
@@ -67,4 +72,27 @@ input:focus{
 .escreverMensagem > img{
     height: 26px;
     width: 26px;
+}
+
+.mensagensStatus{
+    box-sizing: border-box;
+    width: 375px;
+    min-height: 40px;
+    display: flex;
+    align-items: center; 
+    padding: 8px 9px 9px 8px;
+    background-color: #AAAAAA;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.mensagens{
+    box-sizing: border-box;
+    width: 375px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 8px 9px 9px 8px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
 }
