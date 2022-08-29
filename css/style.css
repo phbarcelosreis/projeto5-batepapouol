@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+} 
+
 body{
     width: 375px;
-    margin: 0 auto;
     background: #F3F3F3;
+    margin: 0 auto;
 }
 
 .parteTopo{
     box-sizing: border-box;
-    width: 375px;
+    width: 100%;
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -18,28 +24,13 @@ body{
     padding: 0 22px 0 22px;
 }
 
-.conteudoPagina{
-    background-color: #F3F3F3;
-    width: 375px;
-    height:587px; 
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    border-radius: 2px;
-}
-
 .logoUOL{
     width: 75px;
     height: 53px;
 }
 
 .escreverMensagem{
-    box-sizing: border-box;
-    width: 375px;
+
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
@@ -51,9 +42,7 @@ body{
 
 .textoMensagem{
     border: none;
-    width: 300px;
-    font-family: 'Roboto';
-    font-weight: 400;
+    width: 80%;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
@@ -74,25 +63,58 @@ input:focus{
     width: 26px;
 }
 
-.mensagensStatus{
-    box-sizing: border-box;
+main{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    margin-top:26px;
+    height:587px;
     width: 375px;
-    min-height: 40px;
-    display: flex;
-    align-items: center; 
-    padding: 8px 9px 9px 8px;
-    background-color: #AAAAAA;
-    margin-top: 20px;
-    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.mensagens{
-    box-sizing: border-box;
-    width: 375px;
-    min-height: 40px;
+.caixa{
+    width:100%;
+    min-height:40px;
+    border-radius: 2px;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:4px;
+    padding: 4px 8px;
+}
+
+.chat{
+    display:flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.entrar{
+    background-color: #DCDCDC;
+}
+
+.digitar{
+    background-color: #FFFFFF;;
+}
+
+.chat h2{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.chat h4{
+    color:#AAAAAA;
+    font-style: normal;
     display: flex;
     align-items: center;
-    padding: 8px 9px 9px 8px;
-    background-color: #FFFFFF;
-    border-radius: 2px;
 }
+
+.chat b{
+    font-weight: 700;
+}
+
+
+
